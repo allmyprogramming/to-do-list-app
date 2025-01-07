@@ -72,5 +72,5 @@ function deleteListItem(){
 li.addClass("delete")
 }
 
-$('list').sortable();
+$('#list').sortable();
 }
