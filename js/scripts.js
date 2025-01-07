@@ -38,7 +38,20 @@ function newItem(){
 
 
 
-
+//change vanilla js code to jquery code
+//add new item to list.  get user input and add to li item
     let li = $('<li></li>');
     let inputValue = $('#input').val();
     li.append(inputValue);
+
+    if (inputValue === '') {
+        alert("You must write something!");
+    } else {
+        $('#list').append(li);
+    }
+
+    //strike out item using jquery and code in styles sheet
+    //add double click event listener
+    function crossOut() {
+        li.toggleClass("strike");
+    }
