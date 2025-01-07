@@ -39,7 +39,7 @@ function newItem(){
     }
 */
 
-
+function newItem(){
 //change vanilla js code to jquery code
 //add new item to list.  get user input and add to li item
     let li = $('<li></li>');
@@ -67,4 +67,10 @@ let crossOutButton = $('<crossOutButton></crossOutButton>');
 crossOutButton.append(document.createTextNode('X'));
 li.append(crossOutButton);
 
+crossOutButton.on("click", deleteListItem);
+function deleteListItem(){
+li.addClass("delete")
+}
+
 $('list').sortable();
+}
