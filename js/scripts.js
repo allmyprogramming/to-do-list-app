@@ -1,3 +1,5 @@
+
+/*
 function newItem(){
 
     //javascript
@@ -35,7 +37,7 @@ function newItem(){
        $('#list').sortable();
     
     }
-
+*/
 
 
 //change vanilla js code to jquery code
@@ -57,7 +59,7 @@ function newItem(){
     }
 
     li.on("dblclick", function crossOut() {
-        li.toggleClass("strick");
+        li.toggleClass("strike");
     });
 
 //add delete button
