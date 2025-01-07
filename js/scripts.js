@@ -59,3 +59,10 @@ function newItem(){
     li.on("dblclick", function crossOut() {
         li.toggleClass("strick");
     });
+
+//add delete button
+let crossOutButton = $('<crossOutButton></crossOutButton>');
+crossOutButton.append(document.createTextNode('X'));
+li.append(crossOutButton);
+
+$('list').sortable();
